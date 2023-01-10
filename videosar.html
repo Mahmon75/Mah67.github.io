@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>الرئيسية</title>
-    <link href="logo.png" rel="icon">
+    <link href="C:\Users\Mahmoud\Desktop\web\almouriat/logo.png" rel="icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <style>
         * {
@@ -32,7 +32,7 @@
             <div class="d-flex flex-wrap align-items-center justify-content-between">
                 <div class="div">
                     <a href="Homear.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                        <img height="64" src="logo.png">
+                        <img height="64" src="C:\Users\Mahmoud\Desktop\web\almouriat/logo.png">
                     </a>
                 </div>
 
@@ -53,7 +53,7 @@
         <div class="row flex-lg-row-reverse align-items-center py-5">
 
             <div class="col-12 col-md-4 text-center">
-                <img src="homepagear.png" class="d-block img-fluid" alt="Bootstrap Themes" loading="lazy">
+                <img src="C:\Users\Mahmoud\Desktop\web\almouriat/homepagear.png" class="d-block img-fluid" alt="Bootstrap Themes" loading="lazy">
             </div>
             <div class="col-12 col-md-8">
                 <h1 class="display-1 fw-bold lh-1 mb-3">
@@ -64,50 +64,45 @@
                     الرجاء اختيار مقطع الفيديو الذي تريد مشاهدته 
                 </p>
                 <div class="row">
-                    <div class="col-12 col-md-4 my-2">
-                        <button type="button"  class="btn btn-light w-100 btn-red rounded-pill fw-bold red-color" data-bs-toggle="modal" data-bs-target="#videoId">
-                             الحزء الاول 
-                          </button>
-                            </div>
-                          <div class="col-12 col-md-4 my-2">
-                            <button type="button"  class="btn btn-light w-100 btn-red rounded-pill fw-bold red-color" data-bs-toggle="modal" data-bs-target="#videoId">
-                                 الجزء الثاني 
-                              </button>
-                            </div>
+                    <div class="buttons-container">
+                        <button class="video-button btn btn-light w-20 btn-red rounded-pill fw-bold red-color" data-video-src="AlmouraitAPP_1.mp4">فيديو 1</button>
+                        <button class="video-button btn btn-light w-20 btn-red rounded-pill fw-bold red-color" data-video-src="AlmouraitAPP_2.mp4">2 فيديو </button>
+                        <button class="video-button btn btn-light w-20 btn-red rounded-pill fw-bold red-color" data-video-src="AlmouraitAPP_3.mp4">3 فيديو </button>
+                        <button class="video-button btn btn-light w-20 btn-red rounded-pill fw-bold red-color" data-video-src="AlmouraitAPP_4.mp4">فيديو 4  </button>
+                        <button class="video-button btn btn-light w-20 btn-red rounded-pill fw-bold red-color" data-video-src="AlmouraitAPP_5.mp4">فيديو 5</button>
+                        <button class="video-button btn btn-light w-20 btn-red rounded-pill fw-bold red-color" data-video-src="AlmouraitAPP_6.mp4">فيديو 6</button>
+                        <button class="video-button btn btn-light w-20 btn-red rounded-pill fw-bold red-color" data-video-src="AlmouraitAPP_7.mp4">فيديو 7</button>
+                        <button class="video-button btn btn-light w-20 btn-red rounded-pill fw-bold red-color" data-video-src="AlmouraitAPP_8.mp4">فيديو 8</button>
+                        <button class="video-button btn btn-light w-20 btn-red rounded-pill fw-bold red-color" data-video-src="AlmouraitAPP_9.mp4">فيديو 9</button>
 
-                              <div class="col-12 col-md-4 my-2">
-                                <button type="button" class="btn btn-light w-100 btn-red rounded-pill fw-bold red-color" data-bs-toggle="modal" data-bs-target="#videoId">
-                                    الجزء الثالث
-                                  </button>
-                                </div>
-                                
-                                <div class="col-12 col-md-4 my-2">
-                                  <button type="button"  class="btn btn-light w-100 btn-red rounded-pill fw-bold red-color" data-bs-toggle="modal" data-bs-target="#videoId">
-                                      الجزء الرابع
-                                    </button>
-                                </div>
-                          
-                          <!-- Modal -->
-                          <div class="modal fade" id="videoId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                 <video width="320" height="240" controls>
-                                <source src="AlmouraitAPP_3.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                              </video>                            </div>
-                              </div>
-                            </div>                            
-                     </div>     
+                      </div>
 
+
+
+                      
+                      <div class="video-modal">
+                        <video id="modal-video" width="320" height="240" controls>
+                          <source src="" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                
+                
+                      </div>
+                          </div> 
+
+
+                 
+  
+  
                      </div>
+
+
+
                 </div>
             </div>
         </div>
+
 
         <footer class="footer pt-3">
             
@@ -120,7 +115,7 @@
                             <a class="text-decoration-none text-white" href="https://github.com/Mah76/ALMOURIAT"> <i class="fa fa-github  mx-2" > </i>Mah76/ALMOURIAT</a>
                         </div>
                         <div class="col">
-                            <a class="text-decoration-none text-white" href="mailto:info@takhlees.app"><i class="fa fa-envelope mx-2"></i>info@almouraitapp.me </a>
+                            <a class="text-decoration-none text-white" href=""><i class="fa fa-envelope mx-2"></i>info@almouraitapp.me </a>
                         </div>
                     </div>
                 </div>
@@ -129,6 +124,19 @@
         </footer>
 
     </div>
+    <script>
+        var videoButtons = document.querySelectorAll('.video-button');
+        var videoPlayer = document.getElementById('modal-video');
+      
+        videoButtons.forEach(function(button) {
+          button.addEventListener('click', function() {
+            var videoSrc = this.getAttribute('data-video-src');
+            videoPlayer.querySelector('source').src = videoSrc;
+            videoPlayer.load();
+            videoPlayer.play(); 
+          });
+        });
+      </script>
 </body>
 
 </html>
